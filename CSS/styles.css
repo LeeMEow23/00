@@ -1,0 +1,813 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+h2{
+    font-family: 'Pacifico';
+    font-size:2.2em;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size:1.5em;
+}
+
+h4{
+    font-family: arial;
+    font-size:1.2em;
+}
+
+
+
+.header{   
+    background: var(--bg);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1rem 7%;
+    border-bottom: var(--border);
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+}
+
+.header .logo img{
+    height:4.5rem;
+}
+
+.header .navbar a{
+    margin:0 2.1rem;
+    font-size: 1.5rem;
+    color:#ff4531;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom:0.1rem solid var(--main-color);
+    padding-bottom:0.5rem;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#container{
+    display:flex;
+    width:100%;
+    background-image: url(../images/1.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    align-items:center;    
+    border:.5px solid #171717;
+    margin-top:47px;
+    height:35%;
+}
+
+.content h3{
+    font-size: 2rem;
+    text-transform:uppercase;
+    color:rgb(238, 72, 6);
+    font-family: 'Pacifico', cursive;
+    margin: 7% 10%;
+    margin-left:35px;
+    margin-top:85px;
+}
+
+
+.slider {
+    position:relative;
+    width: 100%;
+    
+    
+}
+.images {
+    
+    display: flex;
+    width: 100%;
+    height:300px;
+    margin:auto;
+    overflow: hidden;
+    transition: all 0.15s ease;
+}
+.images img {
+
+    height: 500px;
+    width: 100%;
+    transition: all 0.15s ease;
+    overflow: hidden;
+    display:block;
+
+}
+
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid rgb(224, 13, 13) 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #171717;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -50%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -100%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -150%;
+}
+
+
+
+table {
+    width:75%;
+    border-style: solid;
+    border-width:3px;
+    border-color:#075F8A;
+    border-spacing:3px;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+
+}
+
+#index_table th{
+    height:40px;
+    font-weight:bold;
+}
+
+#index_table tr{
+    padding:2px;
+    text-align:center;
+    border-style:solid;
+    border-width:1px;
+}
+
+#index_table{
+    margin-bottom:-150px;
+}
+
+#about #T th{
+    height:40px;
+    font-weight:bold;
+}
+
+#about #T th,td{
+    padding:2px;
+    text-align:center;
+    border-style:solid;
+    border-width:1px;
+    color:#333333;
+}
+
+#about #T{
+    width:75%;
+    margin:auto;
+    border:tomato solid 1px;
+    border-style: solid;
+    border-width:3px;
+    border-color:#075F8A;
+}
+
+
+
+
+#container_contact{
+    margin-top:100px;
+    position:fixed;
+    width:100%;
+}
+
+#info {
+    font-size:20px;
+    color:navy;
+    display:flex;
+    padding:70px;
+    margin-left:30px;
+    width:45%;
+}
+
+
+.bg {
+    /*background-image: url(../images/2.jpeg);
+    background-size:cover;*/
+    background-color:peachpuff;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    height:1500px;
+}
+
+#word{
+    width:100%;
+    height:70px;
+}
+
+#word p{
+    font-size:60px;
+    color:tomato;
+    margin-left:500px;
+}
+
+/* */
+.menu{
+    width: 100%;
+    margin-top:100px;
+}
+
+.menu-heading{
+    font-size: 7rem;
+    text-align: center;
+    text-shadow:0 0 3px #FF0000;
+    text-transform: uppercase;
+    color:orange;
+    font-weight: 800;
+    margin-top:-100px;
+    margin-right:100px;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 3rem;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.menu-img1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m1.jpeg); 
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+}
+
+.menu-img2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m2.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+}
+
+.menu-img3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m3.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+}
+
+
+.menu-img4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m4.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+}
+
+
+.menu-img5{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m5.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+}
+
+
+.menu-img6{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m6.avif);
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+
+
+.menu-img7{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-image: url(../images/m7.webp);
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+
+.menu-img8{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/m8.jpeg);
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+#Menu_bg{
+    background-color:sandybrown;
+    margin-bottom:-200px;
+    margin-top:-280px;
+
+}
+
+#Search_bar{
+    background-color:springgreen;
+}
+
+.box-container{
+    width:70%;
+    margin-top:130px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+.menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+.menu-p{
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #da6b1d;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+
+/* footer contact*/
+
+#footer{
+    margin-top:250px;
+    margin-bottom:0px;
+    background-color:var(--main-color);
+    padding:80px;
+    bottom:0;
+}
+
+#ft img{
+    width:8%;
+}
+
+#ft {
+    margin-left:430px;
+    margin-bottom:30px;
+    margin-top:-30px;
+}
+
+
+#ft a{
+    padding:30px;
+}
+
+#p{
+    margin-left:-25px;
+    padding:10px;
+    font-size:1.4em;
+}
+
+#p_A{
+    margin-left:-160px;
+}
+#p_P{
+    margin-left:-40px;
+}
+#p_E{
+    margin-left:-40px;
+}
+
+
+
+#copy{
+    text-align:center;
+    margin-bottom:-60px;
+}
+
+
+
+#Menu{
+    width:95%;
+    margin-top:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#about table{
+    width:45%;
+    margin-left:50px;
+}
+
+
+#contact_table{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:450px;
+   
+}
+
+#contact_content{
+    background-image:url(../images/bg2.jpeg);
+    /*image from 
+    https://www.tripadvisor.com/LocationPhotoDirectLink-g53449-d3599818-i127310704-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+    background-size:1500px 1120px;
+    background-repeat:no-repeat;
+    margin-top:-30px;
+}
+
+#contact_table th{
+    width:30%;
+    height:50px;
+    border-style:solid;
+    border-width:3px;
+    border-color:orangered;
+    background-color:papayawhip;
+}
+
+#contact_table td{
+    border-style:solid;
+    border-width:3px;
+    border-color:orangered;
+    background-color:papayawhip;
+
+}
+
+
+#order_table{
+    margin-top:250px;
+}
+
+#order_table th{
+    height:80px;
+}
+
+#order_table td{
+    height:80px;
+}
+
+#L1{
+    background-image:url(../images/L1.jpeg.crdownload);
+    height:500px;
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+#L2{
+    background-image:url(../images/L2.jpeg);
+    height:500px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+
+#L4{
+    background-image:url(../images/L4.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:500px;
+    /*image from 
+    https://www.yelp.com/biz/palm-diner-boynton-beach-2
+    */
+}
+
+
+
+#Order_content a:hover{
+    color: var(--main-color);
+    border-bottom:0.1rem solid var(--main-color);
+    padding-bottom:0.5rem;
+}
+
+
+
+
+
+#shady_map {
+    margin-top:-320px;
+    margin-left:180px;
+    width:80%;
+
+}
+#Mt_map{
+    margin-top:80px;
+    margin-left:180px;
+    width:80%;
+
+
+}
+
+#Strip_map{
+    margin-top:80px;
+    width:80%;
+    margin-left:180px;
+    margin-bottom:-170px;
+
+}
+
+#des_1{
+    float:right;
+    background:turquoise;
+    margin-right:150px;
+    padding:25px;
+    margin-top:3px;
+}
+
+#des_2{
+    float:right;
+    background:sandybrown;
+    margin-right:150px;
+    padding:25px;
+    margin-top:3px;
+}
+
+#des_3{
+    float:right;
+    background:tomato;
+    margin-right:150px;
+    padding:25px;
+    margin-top:3px;
+}
+
+
+/* Media.html*/
+
+#card{
+    display:grid;
+    grid-template-rows:20% 20% 20% 20% 20%;
+    max-width:80%;
+    margin-left:140px;
+    height:1500px;
+    margin-bottom:-180px;
+    grid-gap:15px;
+    margin-top:-350px;
+
+}
+
+
+#card p{
+    margin-top:270px;
+    margin-left:100px;
+}
+
+
+#R1{
+    background-image:url(../images/r1.webp);
+    /*image from https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+}
+
+#R2{
+    background-image:url(../images/r2.webp);
+    /*image from https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+}
+
+#R3{
+    background-image:url(../images/r6.webp);
+    /*image from https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+}
+
+#R4{
+    background-image:url(../images/r4.webp);
+    /*image from https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+}
+
+#R5{
+    background-image:url(../images/r5.webp);
+    /*image from https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html
+    */
+}
+
+#card div{
+    border:sienna solid;
+}
+
+#card div:nth-child(even){
+    border:tomato solid;
+}
+
+/* index table */
+#index_table th{
+    height:40px;
+    font-weight:bold;
+}
+
+#index_table tr{
+    padding:2px;
+    text-align:center;
+    border-style:solid;
+    border-width:1px;
+}
+
+#index_table{
+    margin-bottom:-150px;
+}
+
+/* contact_form */
+
+#contact_form {
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:-180px;
+}
+
+
+#contact_form legend{
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:10px;
+    
+
+}
+
+#contact_form label{
+    margin-left:200px;
+    font-weight:bold;
+    text-align:center;
+
+}
+
+#contact_form input{
+    margin-left:200px;
+    font-weight:bold;
+    text-align:center;
+
+}
+
+#contact_form button{
+    margin-left:370px;
+    font-weight:bold;
+    text-align:center;
+    width:30%;
+    height:55px;
+    font-size:1em;
+    margin-bottom:15px;
+    color:midnightblue;
+
+}
+
+#c{
+    font-size:1.5em;
+}
+
+
+#contact_form .T{
+    background-color:tomato;
+    background-size:cover;
+    padding:10px;
+}
+
+.M{
+    background-color:wheat;
+    background-size:cover;
+}
+
+/* About */
+
+#About{
+    width:75%;
+    margin:auto;
+    margin-top:-250px;
+    height:700px;
+    text-align:center;
+    background-image:url(../images/A0.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+    background-size:cover;
+    
+}
+
+#About_text{
+    width:75%;
+    margin:auto;
+    background:peachpuff;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+#news{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-gap:10px;
+
+}
+
+.n1{
+    background-image:url(../images/A4.webp);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+    margin-left:180px;
+    height:400px;
+    background-repeat:no-repeat;
+    margin-bottom:-250px;
+}
+
+.n2{
+    background-image:url(../images/A2.webp);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+    background-repeat:no-repeat;
+    height:400px;
+    margin-bottom:-250px;
+}
+
+#SS1{
+    background-image:url(../images/SS1.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:180px;
+    width:30%;
+}
+
+#SS2{
+    background-image:url(../images/SS2.jpeg);
+    /*image from 
+    https://www.instagram.com/pamelasdiner1980/
+    */
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:180px;
+    width:30%;
+}
+
